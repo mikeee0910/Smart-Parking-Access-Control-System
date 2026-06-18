@@ -1,0 +1,11 @@
+# --- 原本門鈴 / RFID 系統 ---
+Flask
+line-bot-sdk>=3.0
+opencv-python
+pyserial
+requests
+
+# --- 車牌辨識(Raspberry Pi 端) ---
+# 走 ONNX Runtime,不需要 PyTorch/TensorFlow。
+# 建議 64-bit Raspberry Pi OS(aarch64),onnxruntime 才有預編譯 wheel。
+fast-alpr[onnx]

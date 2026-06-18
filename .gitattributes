@@ -1,0 +1,4 @@
+# 確保 Pi 上的 shell 腳本與 systemd unit 檔一律用 LF，
+# 避免在 Windows 編輯/簽出時被轉成 CRLF，導致 bash 報 "bad interpreter" 或 systemd 解析錯誤。
+deploy/*.sh      text eol=lf
+deploy/*.service text eol=lf

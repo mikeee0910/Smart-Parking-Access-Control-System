@@ -1,0 +1,17 @@
+[Unit]
+Description=Smart Parking - LINE bot + camera + plate (Flask :5000)
+Wants=network-online.target
+After=network-online.target parking-stm32.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=__RUN_USER__
+WorkingDirectory=__APP_DIR__
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 __APP_DIR__/app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
