@@ -1,0 +1,3 @@
+../Core/Src/app_tasks.c:14:6:RFIDTask_Entry	48	static
+../Core/Src/app_tasks.c:34:6:ButtonTask_Entry	32	static
+../Core/Src/app_tasks.c:56:6:WiFiTask_Entry	48	static
